@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8">
+<style>
+@font-face{font-family:BC;src:url(../brand/fonts/barlow-condensed-latin-700-normal.woff2);font-weight:700}
+@font-face{font-family:BC;src:url(../brand/fonts/barlow-condensed-latin-800-normal.woff2);font-weight:800}
+@font-face{font-family:BC;src:url(../brand/fonts/barlow-condensed-latin-600-normal.woff2);font-weight:600}
+@font-face{font-family:B;src:url(../brand/fonts/barlow-latin-500-normal.woff2);font-weight:500}
+@font-face{font-family:B;src:url(../brand/fonts/barlow-latin-600-normal.woff2);font-weight:600}
+@font-face{font-family:B;src:url(../brand/fonts/barlow-latin-700-normal.woff2);font-weight:700}
+:root{--p:#16191D;--ink:#132030;--o:#FEA418;--c:#00C8F0;--wa:#1FAF54;--steel:#EEF2F6}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1920px;overflow:hidden;background:var(--p)}
+.scene{position:absolute;inset:0;overflow:hidden;display:none}
+.bg{position:absolute;inset:-4%;background-size:cover;background-position:center;will-change:transform}
+.shade{position:absolute;inset:0}
+.h{font-family:BC;font-weight:800;text-transform:uppercase;color:#fff;line-height:.92;letter-spacing:.5px}
+.b{font-family:B;color:#fff}
+.pill{display:inline-flex;align-items:center;gap:16px;padding:14px 30px;border:2px solid rgba(255,255,255,.35);border-radius:999px;background:rgba(22,25,29,.55);font-family:B;font-weight:600;font-size:38px;color:#fff}
+.dot{width:20px;height:20px;border-radius:50%;background:var(--c);box-shadow:0 0 0 6px rgba(0,200,240,.25)}
+.eyebrow{display:flex;align-items:center;gap:18px;font-family:B;font-weight:700;font-size:40px;letter-spacing:6px;text-transform:uppercase;color:var(--o)}
+.eyebrow i{display:block;width:70px;height:7px;background:linear-gradient(90deg,var(--o) 55%,var(--c) 55%)}
+.brand{position:absolute;top:150px;left:70px;display:flex;align-items:center;gap:18px}
+.brand img{width:66px}
+.brand .n{font-family:BC;font-weight:800;font-size:46px;color:#fff;letter-spacing:1px;line-height:1}
+.brand .t{font-family:B;font-weight:700;font-size:20px;letter-spacing:4px;color:var(--o);margin-top:4px}
+.card{position:absolute;left:70px;right:70px;background:rgba(22,25,29,.88);border-top:10px solid var(--o);padding:46px 52px 50px}
+.card.c2{border-top-color:var(--c)}
+.tag{display:inline-block;background:var(--c);color:var(--p);font-family:BC;font-weight:800;font-size:46px;padding:8px 26px;letter-spacing:2px;text-transform:uppercase}
+.tag.o{background:var(--o)}
+.spec{font-family:B;font-weight:600;font-size:40px;color:#cfd8e2;margin-top:18px}
+.check{display:flex;align-items:center;gap:20px;font-family:B;font-weight:600;font-size:42px;color:#fff;margin-top:22px}
+.check b{width:52px;height:52px;border-radius:50%;border:3px solid var(--o);display:flex;align-items:center;justify-content:center;color:var(--o);font-size:32px;flex:none}
+.bar{position:absolute;left:0;right:0;height:12px;background:linear-gradient(90deg,var(--o) 50%,var(--c) 50%)}
+.wa{display:flex;align-items:center;gap:22px;background:var(--wa);border-radius:14px;padding:34px 44px;font-family:B;font-weight:700;color:#fff}
+</style></head><body>
+
+<!-- S1 HOOK -->
+<div class="scene" id="s1">
+  <div class="bg" style="background-image:url(../assets/web/01-gudang-pipa-hdpe.webp)"></div>
+  <div class="shade" style="background:linear-gradient(180deg,rgba(22,25,29,.55) 0%,rgba(22,25,29,.35) 35%,rgba(22,25,29,.92) 70%,#16191D 100%)"></div>
+  <div class="brand a" data-in="0.0"><img src="../assets/web/logo-arkara-mark.webp"><div><div class="n">JAWARA PIPA</div><div class="t">AHLINYA SISTEM PERPIPAAN</div></div></div>
+  <div style="position:absolute;left:70px;right:70px;top:860px">
+    <div class="a" data-in="0.0"><span class="pill"><span class="dot"></span>Stok Ready</span></div>
+    <div class="eyebrow a" data-in="0.05" style="margin-top:44px"><i></i>Proyek di Jabodetabek?</div>
+    <div class="h a" data-in="0.15" style="font-size:150px;margin-top:26px">Ongkir<br>Pipa HDPE</div>
+    <div class="h a pop" data-in="0.45" style="font-size:230px;color:var(--o);margin-top:6px">Gratis!</div>
+  </div>
+  <div class="bar" style="bottom:0"></div>
+</div>
+
+<!-- S2 SOLID WALL -->
+<div class="scene" id="s2">
+  <div class="bg" style="background-image:url(../assets/web/02-pipa-hdpe-solid-wall.webp)"></div>
+  <div class="shade" style="background:linear-gradient(180deg,rgba(22,25,29,.25) 0%,rgba(22,25,29,0) 40%,rgba(22,25,29,.85) 100%)"></div>
+  <div class="brand"><img src="../assets/web/logo-arkara-mark.webp"><div><div class="n">JAWARA PIPA</div><div class="t">AHLINYA SISTEM PERPIPAAN</div></div></div>
+  <div class="card a" data-in="0.1" data-from="up" style="top:1000px">
+    <div class="eyebrow" style="font-size:34px"><i></i>Air bersih &amp; bertekanan</div>
+    <div class="h" style="font-size:120px;margin-top:18px">HDPE Solid Wall</div>
+    <div class="spec">1/2" – 48" · PN 6–20 · Roll &amp; batangan</div>
+    <div class="a" data-in="0.55" style="margin-top:32px"><span class="tag">✓ Stok Ready</span></div>
+  </div>
+</div>
+
+<!-- S3 CORRUGATED & SPIRAL -->
+<div class="scene" id="s3">
+  <div class="bg" style="background-image:url(../assets/web/06-pipa-hdpe-double-wall-corrugated.webp)"></div>
+  <div class="shade" style="background:linear-gradient(180deg,rgba(22,25,29,.25) 0%,rgba(22,25,29,0) 40%,rgba(22,25,29,.85) 100%)"></div>
+  <div class="brand"><img src="../assets/web/logo-arkara-mark.webp"><div><div class="n">JAWARA PIPA</div><div class="t">AHLINYA SISTEM PERPIPAAN</div></div></div>
+  <div class="card c2 a" data-in="0.1" data-from="up" style="top:1000px">
+    <div class="eyebrow" style="font-size:34px;color:var(--c)"><i></i>Drainase &amp; gorong-gorong</div>
+    <div class="h" style="font-size:112px;margin-top:18px">HDPE Corrugated<br>&amp; Spiral</div>
+    <div class="spec">Double wall 4" – 24" · Spiral 32" – 70"</div>
+    <div class="a" data-in="0.55" style="margin-top:32px"><span class="tag o">✓ Stok Ready</span></div>
+  </div>
+</div>
+
+<!-- S4 SUBDRAIN & GEOTEXTILE -->
+<div class="scene" id="s4">
+  <div class="bg" style="background-image:url(../assets/web/04-pipa-subdrain-geotextile.webp)"></div>
+  <div class="shade" style="background:linear-gradient(180deg,rgba(22,25,29,.25) 0%,rgba(22,25,29,0) 40%,rgba(22,25,29,.85) 100%)"></div>
+  <div class="brand"><img src="../assets/web/logo-arkara-mark.webp"><div><div class="n">JAWARA PIPA</div><div class="t">AHLINYA SISTEM PERPIPAAN</div></div></div>
+  <div class="card a" data-in="0.1" data-from="up" style="top:1000px">
+    <div class="eyebrow" style="font-size:34px"><i></i>Sistem subdrain</div>
+    <div class="h" style="font-size:112px;margin-top:18px">Perforated<br>&amp; Geotextile</div>
+    <div class="spec">Subdrain 1.5" – 8" · Geotextile 150–500 gsm</div>
+    <div class="a" data-in="0.55" style="margin-top:32px"><span class="tag">✓ Stok Ready</span></div>
+  </div>
+</div>
+
+<!-- S5 FREE ONGKIR -->
+<div class="scene" id="s5" style="background:var(--p)">
+  <div style="position:absolute;left:0;right:0;top:0;height:1060px;display:flex;gap:10px">
+    <div class="ph a" data-in="0.0" data-from="down" style="flex:1;background:url(../assets/web/pengiriman-pipa-hdpe-roll-truk.webp) center/cover"></div>
+    <div class="ph a" data-in="0.12" data-from="down" style="flex:1;background:url(../assets/web/pengiriman-pipa-hdpe-double-wall-diameter-besar.webp) center/cover"></div>
+    <div class="ph a" data-in="0.24" data-from="down" style="flex:1;background:url(../assets/web/muat-pipa-hdpe-corrugated-double-wall.webp) center/cover"></div>
+  </div>
+  <div class="shade" style="background:linear-gradient(180deg,rgba(22,25,29,0) 0%,rgba(22,25,29,0) 40%,#16191D 56%)"></div>
+  <div style="position:absolute;left:70px;right:70px;top:930px">
+    <div class="a pop" data-in="0.4" style="display:inline-block;background:var(--o);padding:26px 40px 18px;transform-origin:left center">
+      <div class="h" style="font-size:150px;color:var(--p)">Free Ongkir</div>
+      <div class="h" style="font-size:96px;color:var(--p);margin-top:4px">Jabodetabek</div>
+    </div>
+    <div class="check a" data-in="0.8" style="margin-top:44px"><b>✓</b>Kirim ke seluruh Indonesia</div>
+    <div class="check a" data-in="0.95"><b>✓</b>Stok besar di gudang Cikarang</div>
+    <div class="check a" data-in="1.1"><b>✓</b>Penawaran &amp; faktur resmi</div>
+  </div>
+</div>
+
+<!-- S6 CTA -->
+<div class="scene" id="s6" style="background:radial-gradient(120% 70% at 50% 30%,#1f242a 0%,#16191D 60%)">
+  <div class="bar" style="top:0"></div>
+  <div style="position:absolute;left:70px;right:70px;top:300px;text-align:center">
+    <img class="a pop" data-in="0.05" src="../assets/web/logo-arkara-mark.webp" style="width:170px">
+    <div class="h a" data-in="0.2" style="font-size:96px;margin-top:20px">Jawara Pipa</div>
+    <div class="a" data-in="0.25" style="font-family:B;font-weight:700;font-size:30px;letter-spacing:7px;color:var(--o);margin-top:8px">AHLINYA SISTEM PERPIPAAN</div>
+    <div class="h a" data-in="0.5" style="font-size:132px;margin-top:90px">Minta<br>Penawaran<br><span style="color:var(--o)">Sekarang!</span></div>
+    <div class="a" data-in="0.9" style="margin-top:70px;display:flex;justify-content:center">
+      <div class="wa"><svg width="64" height="64" viewBox="0 0 24 24"><path fill="#fff" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.6.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.1.6a2.7 2.7 0 0 0 1.8-1.2 2.2 2.2 0 0 0 .2-1.3c-.1-.1-.3-.2-.5-.3Z"/></svg>
+        <div style="text-align:left"><div style="font-size:30px;font-weight:600;opacity:.9">Chat WhatsApp</div><div style="font-family:BC;font-weight:800;font-size:84px;line-height:1;letter-spacing:1px">0851 1167 0410</div></div></div>
+    </div>
+    <div class="b a" data-in="1.1" style="font-weight:600;font-size:46px;margin-top:40px;color:var(--c)">www.jawarapipa.co.id</div>
+  </div>
+  <div class="bar" style="bottom:0"></div>
+</div>
+
+<script>window.SC=[['s1',3.6],['s2',3.0],['s3',3.0],['s4',3.0],['s5',4.0],['s6',4.6]];</script>
+<script src="../brand/reel-engine.js"></script>
+</body></html>

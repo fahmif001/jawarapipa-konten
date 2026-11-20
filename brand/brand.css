@@ -1,0 +1,42 @@
+/* Jawara Pipa – brand system, taken from jawarapipa.co.id (assets/css/main.css)
+   Fonts: Barlow Condensed (headings, uppercase) + Barlow (body)
+   Colors: --p #16191D (primary dark), --o #FEA418 (orange accent), --c #00C8F0 (cyan accent),
+           --ink #132030, --muted #5A6A7B, --steel #EEF2F6, --wa #1FAF54 (WhatsApp)          */
+@font-face{font-family:BC;src:url(fonts/barlow-condensed-latin-600-normal.woff2);font-weight:600}
+@font-face{font-family:BC;src:url(fonts/barlow-condensed-latin-700-normal.woff2);font-weight:700}
+@font-face{font-family:BC;src:url(fonts/barlow-condensed-latin-800-normal.woff2);font-weight:800}
+@font-face{font-family:B;src:url(fonts/barlow-latin-400-normal.woff2);font-weight:400}
+@font-face{font-family:B;src:url(fonts/barlow-latin-500-normal.woff2);font-weight:500}
+@font-face{font-family:B;src:url(fonts/barlow-latin-600-normal.woff2);font-weight:600}
+@font-face{font-family:B;src:url(fonts/barlow-latin-700-normal.woff2);font-weight:700}
+:root{--p:#16191D;--ink:#132030;--o:#FEA418;--c:#00C8F0;--wa:#1FAF54;--steel:#EEF2F6;--muted:#5A6A7B}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--p);color:#fff;font-family:B;overflow:hidden;position:relative}
+/* headings */
+.h{font-family:BC;font-weight:800;text-transform:uppercase;color:#fff;line-height:.93;letter-spacing:.5px}
+.o{color:var(--o)} .c{color:var(--c)}
+/* eyebrow: orange/cyan line + spaced uppercase label (website section label) */
+.eyebrow{display:flex;align-items:center;gap:.45em;font-family:B;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:var(--o)}
+.eyebrow i{display:block;width:1.9em;height:.2em;background:linear-gradient(90deg,var(--o) 55%,var(--c) 55%)}
+/* "● Stok Ready" pill (website hero) */
+.pill{display:inline-flex;align-items:center;gap:.45em;padding:.3em .8em;border:2px solid rgba(255,255,255,.35);border-radius:999px;background:rgba(22,25,29,.55);font-family:B;font-weight:600;color:#fff}
+.pill .dot{width:.55em;height:.55em;border-radius:50%;background:var(--c);box-shadow:0 0 0 .16em rgba(0,200,240,.25)}
+/* brand lockup: logo mark + JAWARA PIPA + tagline */
+.brand{display:flex;align-items:center;gap:.4em}
+.brand img{width:1.45em}
+.brand .n{font-family:BC;font-weight:800;font-size:1em;letter-spacing:.02em;line-height:1;color:#fff}
+.brand .t{font-family:B;font-weight:700;font-size:.42em;letter-spacing:.2em;color:var(--o);margin-top:.15em}
+/* dark card with accent top border */
+.card{background:rgba(22,25,29,.88);border-top:10px solid var(--o)}
+.card.cy{border-top-color:var(--c)}
+.tag{display:inline-block;background:var(--c);color:var(--p);font-family:BC;font-weight:800;padding:.15em .55em;letter-spacing:.04em;text-transform:uppercase}
+.tag.or{background:var(--o)}
+/* check item (orange circle) */
+.check{display:flex;align-items:center;gap:.5em;font-family:B;font-weight:600;color:#fff}
+.check b{width:1.25em;height:1.25em;border-radius:50%;border:3px solid var(--o);display:flex;align-items:center;justify-content:center;color:var(--o);font-size:.75em;flex:none}
+/* orange|cyan stripe bar */
+.bar{height:10px;background:linear-gradient(90deg,var(--o) 50%,var(--c) 50%)}
+/* WhatsApp button */
+.wa{display:inline-flex;align-items:center;gap:.5em;background:var(--wa);border-radius:12px;padding:.5em .8em;font-family:B;font-weight:700;color:#fff}
+.wa .l{font-size:.4em;font-weight:600;opacity:.9}
+.wa .v{font-family:BC;font-weight:800;line-height:1;letter-spacing:.02em}
